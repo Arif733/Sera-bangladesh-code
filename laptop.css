@@ -1,0 +1,130 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.navber {
+   background-color: white; /* corrected the background color property */
+   margin-bottom: -30px;
+   text-align: center;
+   height: 80px;
+   position: fixed; /* make the navbar fixed */
+   top: 0; /* position it at the top */
+   left: 0; /* align it to the left */
+   width: 100%; /* ensure it spans the full width */
+   z-index: 1000; /* ensure it stays above other elements */
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* add shadow to the bottom */
+
+ }
+ .navber-logo img {
+   height: 60px;
+   width: 80%;
+   margin-top: 5px;
+   margin-left: -20px;
+ }
+ .navber ul {
+   list-style: none;
+   text-align: left;
+   display: flex;
+ }
+ .navber ul li {
+   padding: 8px 14px;
+   position: relative;
+ }
+ .navber ul li a {
+   font-size: 17px;
+   color: black;
+   text-decoration: none;
+   transition: all 0.3s;
+   border-radius: 10px;
+   padding: 0px;
+   font-weight: bold; /* Make menu items bold */
+   margin-left: 10px;
+  font-family: 'Roboto';
+ }
+ .navber ul li a:hover {
+   color: rgb(16, 169, 16);
+   text-decoration: underline;
+ }
+ .fas {
+   float: right;
+   margin-left: 5px;
+   padding-top: 3px;
+ }
+ /* dropdown menu style */
+ .dropdown-menu {
+   display: none;
+   flex-wrap: wrap;
+   position: absolute;
+   z-index: 999;
+   width: 260px;
+   left: 0; /* Align with the left edge of the navbar */
+   border-radius: 5px;
+
+ }
+ .dropdown-menu ul li a {
+   text-decoration: none;
+   display: block;
+   max-width: 100%; /* Set maximum width for text */
+   white-space: nowrap; /* Prevent text from wrapping */
+   text-overflow: unset; /* Display ellipsis for overflowed text */
+   padding: 3px;
+   margin-left: 10px;
+ }
+ .navber ul li:hover .dropdown-menu {
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 100%;
+   background-color: white;
+   text-align: center;
+ }
+ .navber ul li:hover .dropdown-menu ul {
+   display: block;
+   margin: 10px;
+ }
+ .navber ul li:hover .dropdown-menu ul li {
+   width: 150px;
+   padding: 8px;
+   margin-left: -50px;
+ }
+
+/* achievement-contact stat from here  */
+.achievement{
+   padding-right:50px ;
+}
+
+.contact-links{
+   position: relative;
+}
+.media-button{
+   position:absolute;
+   margin-top: 200px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+
+
+.contact,button{
+  border: none;
+  border-radius: 12px;
+  background-color: rgb(18, 23, 23);
+  color: aliceblue;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+margin-left: 80px;
+
+}
+/* achievement-contact end here  */
